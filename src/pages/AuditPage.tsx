@@ -14,7 +14,7 @@ export default function AuditPage() {
     app: ["Google APIs", "Microsoft", "Slack", "GitHub", "Notion", "Internal API"][Math.floor(Math.random() * 6)],
     client: ["AssistantBot", "DataProcessor", "ResearchAgent", "MarketingBot"][Math.floor(Math.random() * 4)],
     action: ["getData", "postData", "authenticate", "listResources", "updateResource", "deleteResource"][Math.floor(Math.random() * 6)],
-    status: ["success", "failure", "pending"][Math.floor(Math.random() * (i === 0 ? 3 : 2))],
+    status: ["success", "failure", "pending"][Math.floor(Math.random() * (i === 0 ? 3 : 2))] as "success" | "failure" | "pending",
     details: i < 5 ? `Request details:\n\nEndpoint: /api/v1/resources\nHeaders: {...}\nParams: {...}\nBody: {...}\nResponse: ${Math.random() > 0.7 ? "Error: Unauthorized" : "Success: 200 OK"}` : undefined
   }));
 
