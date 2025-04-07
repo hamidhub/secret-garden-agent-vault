@@ -2,7 +2,7 @@
 import React from "react";
 import PageHeader from "@/components/ui/page-header";
 import { Button } from "@/components/ui/button";
-import { PlusCircle, AppsIcon, Users2Icon, AlertCircle, ShieldIcon } from "lucide-react";
+import { PlusCircle, AppWindowIcon, Users2Icon, AlertCircle, ShieldIcon } from "lucide-react";
 import StatsCard from "@/components/dashboard/StatsCard";
 import RecentActivity from "@/components/dashboard/RecentActivity";
 import AppConnectModal from "@/components/apps/AppConnectModal";
@@ -79,7 +79,7 @@ export default function Dashboard() {
         <StatsCard
           title="Connected Apps"
           value="5"
-          icon={AppsIcon}
+          icon={AppWindowIcon}
           description="2 need attention"
           trend={{ value: 20, isPositive: true }}
         />

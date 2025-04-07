@@ -13,7 +13,7 @@ import {
   SidebarTrigger
 } from "@/components/ui/sidebar";
 import { 
-  AppsIcon, 
+  AppWindowIcon, 
   KeyIcon, 
   ShieldIcon, 
   LayoutDashboardIcon, 
@@ -35,7 +35,7 @@ export default function AppSidebar() {
       path: "/" 
     },
     { 
-      icon: AppsIcon, 
+      icon: AppWindowIcon, 
       label: "Connected Apps", 
       path: "/apps" 
     },
